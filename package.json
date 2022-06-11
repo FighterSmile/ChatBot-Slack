@@ -1,0 +1,17 @@
+{
+  "name": "slack-bot",
+  "version": "1.0.0",
+  "description": "A helpful bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dave",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/rtm-api": "^6.0.0",
+    "@slack/web-api": "^6.7.2",
+    "dotenv": "^16.0.1",
+    "esm": "^3.2.25"
+  }
+}
