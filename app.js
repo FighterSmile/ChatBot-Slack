@@ -23,12 +23,14 @@ rtm.on('ready', async ()=>{
   console.log('bot started')
 })
 
+
 //listen to messages
 const listenMessage = () => rtm.on('message', async (msg) =>{
   if(msg.type !== 'message' || msg.subtype == 'bot_message' || !msg.text) return;
 
   let message = msg.text.toLowerCase()
   const channel = msg.channel
+
 
   // reply according to the keyword
   const step = await getStep(message);
