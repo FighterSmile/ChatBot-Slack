@@ -1,0 +1,198 @@
+{
+  "DEFAULT":{
+    "replyMessage":[
+      "I'm sorry i didn't understand \n",
+      "Please try to write the words clearly \n",
+      "To start over try saying 'Hello' or 'Hi'"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "WELCOME":{
+    "replyMessage":[
+      "Hi, i'm Atenea\n ",
+      "How can i help you? \n",
+      "if you don't know how to start you can put 'Menu'\n"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "MENU":{
+    "replyMessage":[
+      "This is the Menu, \n",
+      "Please write the number of your interest \n",
+      "1. HR Internal Prociders\n",
+      "2. HR Guides \n",
+      "3. HR Forms \n",
+      "4. Job Description \n",
+      "5. Calendar Global Day Offs \n"
+    ]
+  },
+  "ONTOP":{
+    "replyMessage":[
+      "Ontop is the best place to work"
+    ]
+  },
+  "BYE":{
+    "replyMessage":[
+      "Bye Bye !! Ontoper \n",
+      "Have an amazing day !!\n"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_1":{
+    "replyMessage":[
+      "This is the link to the presentation \n",
+      "<https://www.notion.so/ontopai/Internal-Procedures-caf29f6f89484d0082e91fef964dbc6a|Go to Presentation> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_2":{
+    "replyMessage":[
+      "These are the available guides that we have in HR \n",
+      "1. Fee Increase Guideline \n",
+      "2. Off Days Guide \n",
+      "3. Guide to 15Five \n",
+      "4. Offboarding step by step"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_3":{
+    "replyMessage":[
+      "These are the available Forms that we have in HR \n",
+      "1. Certification of - Services Rendered Request \n",
+      "2. Speak up - Mailbox \n",
+      "3. Diversity Ideas!  \n",
+      "4. Talent Acquisition Requirement \n",
+      "5. Feedback leader - Form \n",
+      "6. New Role/ Career Advancement/ Fee Increase Request - Form \n"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_4":{
+    "replyMessage":[
+      "This is the link to the Jod Descriptions \n",
+      "<https://www.notion.so/ontopai/Talent-Acquisition-3d7187cb35734939b8f7c4b6f8e7d3f9#41a5fd708b96478c992dd34989763fbc|Go to Notion> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_5":{
+    "replyMessage":[
+      "This is the link to the Calendar Global day offs \n",
+      "<https://www.notion.so/ontopai/d5ec168fda5d46e99be0d34f56961a66?v=2ca5cb1d26c94a83853116d46ae84f53|Go to Notion> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n"
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_2_1":{
+    "replyMessage":[
+      "This is the link to the Fee Increase Guideline \n",
+      "<https://docs.google.com/presentation/d/11mJKz1poHDxBxUXzw_RRtKBpZl-ZkIeUNpNc-2hfeKc/edit#slide=id.g11aea635790_0_264|Go to Presentation>\n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n"      
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_2_2":{
+    "replyMessage":[
+      "This is the link to the guide to the Off days \n",
+      "<https://www.notion.so/ontopai/Absences-Days-Off-How-to-get-them-ad787c42412f4b9982d03944cbaa8ed4|Go to Notion> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n"      
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_2_3":{
+    "replyMessage":[
+      "This is the link to the guide to the 15Five Plataform \n",
+      "<https://www.notion.so/ontopai/Mindfulness-54f19c7eba8f455dadc08dc0ff47f4bb#69702350b94d4332a4f1019ff744f856|Go to Notion> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_2_4":{
+    "replyMessage":[
+      "This is the link to the Step-by-step guide to Offboarding process\n",
+      "<https://www.notion.so/ontopai/Offboarding-7606ff6167d04559bdf09eb20e3978cf|Go to notion> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_3_1":{
+    "replyMessage":[
+      "This is the link to the Certification of - Services Rendered Request\n",
+      "<https://www.notion.so/ontopai/Certification-of-Services-Rendered-Request-f337ebf1e86f457f9f34821fa8d57479|Go to Form> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_3_2":{
+    "replyMessage":[
+      "This is the link to the Speak up - Mailbox\n",
+      "<https://docs.google.com/forms/d/e/1FAIpQLScQv2h6HkKD_-QbCGD03ouF5OJwTK71-iUZMys7_Rxsb8EnfA/viewform|Go to Form> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_3_3":{
+    "replyMessage":[
+      "This is the link to the Diversity Ideas \n",
+      "<https://docs.google.com/forms/d/1A3chzHyiSajjSvNXEh-dwkI-c2zrSW1cgKW6Jl0ro8k/viewform?edit_requested=true|Go to Form> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_3_4":{
+    "replyMessage":[
+      "This is the link to the Talent Adquisition \n",
+      "<https://docs.google.com/forms/d/e/1FAIpQLSfKjTE1pAlVnGHx1C__GjpxzaOsk2uYZ_Qc5XmSUvJhKBsIxw/viewform|Go to Form> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_3_5":{
+    "replyMessage":[
+      "This is the link to the Feedback Leader - Form \n",
+      "<https://docs.google.com/forms/d/e/1FAIpQLSfZXvvyM2lenMXbcP2Spf_IqC2FygCDya41EtZx8nB4DL8m5w/viewform|Go to Form> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  },
+  "STEP_3_6":{
+    "replyMessage":[
+      "This is the link to the New Role/ Career Advancement/ Fee Increase Request - Form \n",
+      "<https://docs.google.com/forms/d/e/1FAIpQLSeF24wh_UYv-vsj1XHZ0wSytVK3y1WMjO9W-BB6m_G3LyunCg/viewform|Go to Form> \n",
+      " \n",
+      "If you need anything else, put back 'Menu', otherwise 'Bye'.\n" 
+    ],
+    "media":null,
+    "trigger":null
+  }
+}

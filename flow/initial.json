@@ -1,0 +1,34 @@
+[
+  {
+    "keywords":[
+      "ontop"
+    ],
+    "key":"ONTOP"
+  },
+  {
+    "keywords": [
+      "hello",
+      "hi",
+      "hola",
+      "good morning"
+    ],
+    "key": "WELCOME"
+  },
+  {
+    "keywords":[
+      "bye",
+      "adios",
+      "later",
+      "off",
+      "goodnight",
+      "good bye"
+    ],
+    "key":"BYE"
+  },
+  {
+    "keywords":[
+      "menu"
+    ],
+    "key": "MENU"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "keywords":[
+      "menu"
+    ],
+    "key":"MENU"
+  },
+  {
+    "keywords":[
+      "bye"
+    ],
+    "key":"BYE"
+  }
+]
