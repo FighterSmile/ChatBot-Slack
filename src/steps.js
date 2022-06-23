@@ -2,56 +2,28 @@ const stepsInitial = require('../flow/initial.json');
 const stepsReponse = require('../flow/response.json');
 
 
-const get = (message) => new Promise((resolve,reject)  => {
-  for(i=0; stepsInitial.length > i; i++){
-    const {key} = stepsInitial.find( k =>{
-      let isMatch = message.includes(k.keywords[i])
-      if(isMatch) return isMatch
-    }) || {key:null}
-    const response = key || null
-    if(response) return resolve(response)
-  }
-  resolve(null)
-}) ;
+const get =  async (message) => {
+  const response = await getStep(stepsInitial, message)
+  return response
+};
 
-const getMenu = (msg) => new Promise((resolve, reject) =>{
+const getMenu = async (msg) =>{
   const nextStep = require(`../flow/MENU.json`);
-  for(i=0;nextStep.length > i; i++){
-    const {key} = nextStep.find( k=>{
-      let isMatch = msg.includes(k.keywords[i])
-      if(isMatch) return isMatch
-    }) || {key:null}
-    const response = key || key
-    if(response) return resolve(response)
-  }
-  resolve(null)
-})
+  const response = await getStep(nextStep, msg)
+  return response
+}
 
-const getStep_x = (lastStep, msg) => new Promise((resolve, reject) =>{
+const getStep_x = async (lastStep, msg) =>{
   const nextStep = require(`../flow/step_x/${lastStep}.json`);
-  for(i=0;nextStep.length > i; i++){
-    const {key} = nextStep.find( k=>{
-      let isMatch = msg.includes(k.keywords[i])
-      if(isMatch) return isMatch
-    }) || {key:null}
-    const response = key || key
-    if(response) return resolve(response)
-  }
-  resolve(null)
-})
+  const response = await getStep(nextStep, msg)
+  return response
+}
 
-const getStep_x_x = (lastStep, msg) => new Promise((resolve, reject) => {
+const getStep_x_x = async (lastStep, msg) => {
   const nextStep = require(`../flow/step_x_x/${lastStep}.json`);
-  for(i=0; nextStep.length > i ; i++){
-    const {key} = nextStep.find( k=>{
-      let isMatch = msg.includes(k.keywords[i])
-      if (isMatch) return isMatch
-    }) || {key:null}
-    const response = key || null
-    if(response) return resolve(response)
-  }
-  resolve(null)
-})
+  const response = await getStep(nextStep, msg)
+  return response
+}
 
 const reply = (step) => new Promise((resolve, reject) =>{
   try{
@@ -66,6 +38,18 @@ const reply = (step) => new Promise((resolve, reject) =>{
   } catch{
     resolve(null)
   }
+})
+
+const getStep =(nextStep, msg) => new Promise((resolve, reject) => {
+  for(i=0;nextStep.length >i ; i++){
+    const {key} = nextStep.find( k => {
+      let isMatch = msg.includes(k.keywords[i])
+      if(isMatch) return isMatch
+    }) || {key:null}
+    const response = key || null
+    if(response) return resolve(response)
+  }
+  resolve(null)
 })
 
 

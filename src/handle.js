@@ -1,4 +1,3 @@
-// let text = 'JavaScript ~!@#$%^&*()+`-={}[]|\\:";\'/?><., es tremendo \:";\'/?><';
 
 function formatting(text){
   if(text.constructor != String) return null
@@ -12,7 +11,6 @@ function formatting(text){
   return enieMinus.replace(patron, '');
 }
 
-// formatting(text);
-// formatting(34);
+
 
 module.exports = {formatting};

@@ -22,10 +22,16 @@
       "4"
     ],
     "key":"STEP_2_4"
-  },
+  },  
   {
     "keywords":[
-      "menu"
+      "5"
+    ],
+    "key":"STEP_2_5"
+  }, 
+  {
+    "keywords":[
+      "9"
     ],
     "key":"MENU"
   }

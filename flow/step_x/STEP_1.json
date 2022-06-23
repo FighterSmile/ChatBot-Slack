@@ -1,14 +1,44 @@
 [
   {
     "keywords":[
-      "menu"
+      "1"
     ],
-    "key":"MENU"
+    "key" :"STEP_1_1"
   },
   {
     "keywords":[
-      "bye"
+      "2"
     ],
-    "key":"BYE"
+    "key" :"STEP_1_2"
+  },
+  {
+    "keywords":[
+      "3"
+    ],
+    "key" :"STEP_1_3"
+  },
+  {
+    "keywords":[
+      "4"
+    ],
+    "key":"STEP_1_4"
+  },
+  {
+    "keywords":[
+      "5"
+    ],
+    "key":"STEP_1_5"
+  },
+  {
+    "keywords":[
+      "6"
+    ],
+    "key":"STEP_1_6"
+  },
+  {
+    "keywords":[
+      "9"
+    ],
+    "key":"MENU"
   }
 ]

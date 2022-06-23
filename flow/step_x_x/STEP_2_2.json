@@ -1,14 +1,14 @@
 [
   {
     "keywords":[
-      "menu"
-    ],
-    "key":"MENU"
-  },
-  {
-    "keywords":[
       "9"
     ],
     "key":"STEP_2"
+  },
+  {
+    "keywords":[
+      "menu"
+    ],
+    "key":"MENU"
   }
 ]

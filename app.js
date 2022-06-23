@@ -25,10 +25,11 @@ rtm.on('ready', async ()=>{
 
 //listen to messages
 const listenMessage = () => rtm.on('message', async (msg) =>{
-  if(msg.type !== 'message' || msg.subtype == 'bot_message' || !msg.text) return;
+  if(msg.type !== 'message' || msg.subtype === 'bot_message' || !msg.text) return;
 
   let message = msg.text.toLowerCase()
   const channel = msg.channel
+  const userid = msg.user
 
   // formatting text
   message = await formatting(message)
@@ -39,16 +40,11 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
   // reply according to the keyword
   let step = await getStep(message);
 
-  if(lastStep && step != 'WELCOME') {
+  if(lastStep && step != 'WELCOME' && lastStep != step) {
     const regExp = /STEP_[1-9]$/;
     const regExp_2 = /STEP_[1-9]_[1-9]$/;
 
-    if(lastStep == step){
-      const response = await responseMessages(step);
-      await sendMessage(channel, response.replyMessage)
-      return
-    }
-    
+    // Messae MENU and STEP_x
     if(lastStep == 'MENU' || regExp.test(lastStep)){
       step = await getStepAfter(lastStep, message)
       const response = await responseMessages(step)
@@ -58,7 +54,8 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
         return
       }
     }
-    
+
+    // Message STEP_x_x
     if( regExp_2.test(lastStep)){
       step = await getStepAfter(lastStep, message)
       const response = await responseMessages(step)
@@ -68,19 +65,33 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
         return
       }
     }
-  };
 
+    step = await getStep(message);
+    
+    // Message Default
+    if(regExp.test(lastStep) || regExp_2.test(lastStep) || lastStep === 'MENU'){
+      if(!step ){
+        step = lastStep
+        const response = await responseMessages(step)
+        const defaultMessage = await responseMessages('DEFAULT_STEP')
+        if(response){
+          saveMessage(step,message,channel)
+          await sendMessage(channel, defaultMessage.replyMessage)
+          await sendMessage(channel, response.replyMessage)
+          return
+        }
+      }
+    }
+  };
   
   // save new messages
   saveMessage(step, message, channel);
-  
-  // reply according to the keyword
-  step = await getStep(message);
 
   // reply according to the keyword
   if (step){
-    const response = await responseMessages(step);
-    await sendMessage(channel, response.replyMessage)
+    let response = await responseMessages(step);
+    response = response.replyMessage.replace('USER',userid)
+    await sendMessage(channel, response)
     return
   }
 
