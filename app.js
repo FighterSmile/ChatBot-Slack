@@ -23,7 +23,6 @@ rtm.on('ready', async ()=>{
   console.log('bot started')
 })
 
-
 //listen to messages
 const listenMessage = () => rtm.on('message', async (msg) =>{
   if(msg.type !== 'message' || msg.subtype === 'bot_message' || !msg.text) return;
@@ -36,7 +35,7 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
   message = await formatting(message)
 
   // Paso anterior
-  let lastStep = await readLastStep(channel)
+  let lastStep = await readLastStep(userid)
 
   // reply according to the keyword
   let step = await getStep(message);
@@ -50,7 +49,7 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
       step = await getStepAfter(lastStep, message)
       const response = await responseMessages(step)
       if(response){
-        saveMessage(step,message,channel)
+        saveMessage(step,message,userid)
         await sendMessage(channel, response.replyMessage)
         return
       }
@@ -61,7 +60,7 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
       step = await getStepAfter(lastStep, message)
       const response = await responseMessages(step)
       if(response){
-        saveMessage(step,message,channel)
+        saveMessage(step,message,userid)
         await sendMessage(channel, response.replyMessage)
         return
       }
@@ -76,7 +75,7 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
         const response = await responseMessages(step)
         const defaultMessage = await responseMessages('DEFAULT_STEP')
         if(response){
-          saveMessage(step,message,channel)
+          saveMessage(step,message,userid)
           await sendMessage(channel, defaultMessage.replyMessage)
           await sendMessage(channel, response.replyMessage)
           return
@@ -86,7 +85,7 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
   };
   
   // save new messages
-  saveMessage(step, message, channel);
+  saveMessage(step, message, userid);
 
   // reply according to the keyword
   if (step){
