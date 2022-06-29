@@ -1,7 +1,7 @@
 {
   "DEFAULT":{
     "replyMessage":[
-      "I'm sorry I didn't get it! Please try to write it again \n",
+      "I'm sorry :cry: I didn't get it! Please try to write it again \n",
       "To start over try saying 'Hello', 'Hi' or 'Menu' \n"
     ],
     "media":null,
@@ -16,7 +16,7 @@
   },
   "WELCOME":{
     "replyMessage":[
-      "*_Hi <@USER>, I'm Peach, nice to meet you!_*\n ",
+      "*_Hi <@USER>, I'm Peach :peach:, nice to meet you!_* \n ",
       "*_Tell me how can I help? (In case you don't know just type 'Menu'_*) \n"
       ],
     "media":null,
@@ -24,8 +24,8 @@
   },
   "MENU":{
     "replyMessage":[
-      "*This is my Menu, Tell me what would you like me to help you with? *\n",
-      "*Please just write the number of your interest* \n",
+      "*_This is my Menu :sunglasses:, Tell me what would you like me to help you with?_*\n",
+      "*_Please just write the number of your interest_*:\n",
       "  \n",
       "1. Who am I?\n",
       "2. Certifications\n",
@@ -38,98 +38,99 @@
   },
   "ONTOP":{
     "replyMessage":[
-      "*_Yaaaas! Ontop is the best place to work!_*"
+      "*_Yaaaas :rocket:! Ontop is the best place to work!_*"
     ]
   },
   "BYE":{
     "replyMessage":[
       "*_Goodbye - au revoir - arrivederci - auf wiedersehen - adeus - daag - chao _*\n",
-      "*_Have a nice one!_* \n"
+      "*_Have a nice one! :kissing_closed_eyes: _* \n"
     ],
     "media":null,
     "trigger":null
   },
   "STEP_1":{
     "replyMessage":[
-      "*_Who am I? That's one secret I'll never tell... You know you love me. XOXO, Atenea_* :smile:\n",
-      "*_Just kidding, I'm Atenea an important member of HR who is here to help you with a lot of things. _*\n",
+      "*_Who am I? That's one secret :shushing_face: I'll never tell... You know you love me. XOXO, Peach :peach:_* \n",
+      "*_Just kidding :rolling_on_the_floor_laughing:, I'm Peach an important member of HR who is here to help you with a lot of things._*\n",
       "  \n",
-      "To go back to the previous options just type 'Menu' or '9'  \n"
+      "To go back to Menu just type 'Menu'\n",
+      "If there's nothing else I can help you with, just type 'Bye'."
     ],
     "media":null,
     "trigger":null
   },
   "STEP_2":{
     "replyMessage":[
-      "*_Do you need a certification of - Services rendered request - ?_ *\n",
+      "*_Do you need a certification of - Services rendered request - :page_with_curl: ?_ *\n",
       "*_A.K.A 'Job Certificate' don't worry I got you, just click on the next link:_* \n",
       "  \n",
       "<https://www.notion.so/ontopai/Certification-of-Services-Rendered-Request-f337ebf1e86f457f9f34821fa8d57479|Click Here> \n",
       "  \n",
-      "To go back to the previous options just type 'Menu' or '9'\n",
-      "If there's nothing else I can help you with for the moment just type 'Bye'."
+      "To go back to Menu just type 'Menu'\n",
+      "If there's nothing else I can help you with, just type 'Bye'."
     ],
     "media":null,
     "trigger":null
   },
   "STEP_3":{
     "replyMessage":[
-      " *_This Menu, Compensation_* \n",
+      " *_As a leader do you want to know how to request a fee Increase :moneybag: to one of your teammates? take a look at how to do it correctly here:_* \n",
       "  \n",
       "1. Guideline\n",
-      "2. Form\n",
+      "2. Form to request it\n",
       "  \n",
-      "To go back to the previous options just type 'Menu' or '9'\n",
-      "If there's nothing else I can help you with for the moment just type 'Bye'."
+      "To go back to Menu just type 'Menu'\n",
+      "If there's nothing else I can help you with, just type 'Bye'."
     ]
   },
   "STEP_4":{
     "replyMessage":[
-      "*_This form will give you the opportunity to speak when you need it the most (anonymously if you want to), and our VP of HR is there to help you in the process._*\n",
+      "*_At Ontop we really care about our people :hugging_face:! Take a look at this form that will give you the opportunity to speak when you need it the most (anonymously if you want to), and our VP of HR is there to help you in the process. :hugging_face:_*\n",
       "  \n",
       "<https://docs.google.com/forms/d/e/1FAIpQLScQv2h6HkKD_-QbCGD03ouF5OJwTK71-iUZMys7_Rxsb8EnfA/viewform|Click Here> \n",
       "  \n",
-      "To go back to the previous options just type 'Menu' or '9'\n",
-      "If there's nothing else I can help you with for the moment just type 'Bye'."
+      "To go back to Menu just type 'Menu'\n",
+      "If there's nothing else I can help you with, just type 'Bye'."
     ]
   },
   "STEP_5":{
     "replyMessage":[
-      " *_This Menu, Talent Adquisition_* \n",
+      " *_If you want to request a new rockstar :guitar: whether is a new role or a replacement, check here what you need to request them:_* \n",
       "  \n",
       "1. Jobs descriptions\n",
       "2. Form Talent Adquisition\n",
       "  \n",
-      "To go back to the previous options just type 'Menu' or '9'\n",
-      "If there's nothing else I can help you with for the moment just type 'Bye'."
+      "To go back to Menu just type 'Menu'\n",
+      "If there's nothing else I can help you with, just type 'Bye'."
     ]
   },
   "STEP_6":{
     "replyMessage":[
-      "*_From my experience as a member of HR, these are our most frequent requests. take a look at them a choose the one you need._*\n",
+      "*_From my experience as a member of HR :face_with_hand_over_mouth:, these are our most frequent requests. take a look at them a choose the one you need._*\n",
       "  \n",
       "1. Offboarding process step-by-step \n",
       "2. How to request a Day-Off ? \n",
       "3. Global Day Offs\n",
       "4. Birthdays Ontopers\n",
       " \n",
-      "To go back to the previous options just type 'Menu' or '9'\n",
-      "If there's nothing else I can help you with for the moment just type 'Bye'."
+      "To go back to Menu just type 'Menu'\n",
+      "If there's nothing else I can help you with, just type 'Bye'."
     ]
   },
   "STEP_7":{
     "replyMessage":[
-      " *_ Feed Back Peach_* \n",
+      " *_I'm gorgeous I know :kissing_heart:! But I also know feedback is part of our DNA since day one, so please is there something you would like me to add or change let me know by just filling out the next form: _* \n",
       "  \n",
-      "<Link del form que no he creado|Click Here> \n",
+      "<https://forms.gle/reWEWAizRcQYd1ug9|Click Here> \n",
       "  \n",
-      "To go back to the previous options just type 'Menu' or '9'\n",
-      "If there's nothing else I can help you with for the moment just type 'Bye'."
+      "To go back to Menu just type 'Menu'\n",
+      "If there's nothing else I can help you with, just type 'Bye'."
     ]
   },
   "STEP_3_1":{
     "replyMessage":[
-      "*_As a leader do you want to know how to request a career advancement - request a fee Increase or give a new Role-area to one of your teammates? take a look at how to do it correctly here:_*\n",
+      "*_As a leader do you want to know how to request a career advancement - request a fee Increase or give a new Role-area to one of your teammates :face_with_monocle:? take a look at how to do it correctly here:_*\n",
       "  \n",
       "<https://docs.google.com/presentation/d/11mJKz1poHDxBxUXzw_RRtKBpZl-ZkIeUNpNc-2hfeKc/edit#slide=id.g11aea635790_0_264|Click Here> \n",
       "  \n",
@@ -139,7 +140,7 @@
   },
   "STEP_3_2":{
     "replyMessage":[
-      "*_As a leader you may wanna give one of your teammates a fee increase, promotion, or move them to a new area, to know where to request it, just click on the next link:_*\n",
+      "*_As a leader you may wanna give one of your teammates a fee increase, promotion, or move them to a new area, to know where to request it :money_mouth_face:, just click on the next link:_*\n",
       "  \n",
       "<https://forms.gle/8oeJQ1ZtpjShPhNc6|Click Here> \n",
       "  \n",
@@ -147,9 +148,9 @@
       "If there's nothing else I can help you with for the moment just type 'Bye'." 
     ]
   },
-  "STEp_5_1":{
+  "STEP_5_1":{
     "replyMessage":[
-      "*_There's a Job description for every role if you want to know yours, just click here _*\n",
+      "*_There's a Job description for every role if you want to know yours :nerd_face:, just click here: _*\n",
       "  \n",
       " <https://www.notion.so/ontopai/Talent-Acquisition-3d7187cb35734939b8f7c4b6f8e7d3f9#41a5fd708b96478c992dd34989763fbc|Click Here>\n",
       "  \n",
@@ -157,9 +158,9 @@
       "If there's nothing else I can help you with for the moment just type 'Bye'."
     ]
   },
-  "STEp_5_2":{
+  "STEP_5_2":{
     "replyMessage":[
-      "*_If you want to request a new rockstar whether is a new role or a replacement just click on the next link:_*\n",
+      "*_If you want to request a new rockstar whether is a new role or a replacement :wink: just click on the next link:_*\n",
       "  \n",
       "<https://docs.google.com/forms/d/e/1FAIpQLSfKjTE1pAlVnGHx1C__GjpxzaOsk2uYZ_Qc5XmSUvJhKBsIxw/viewform|Click Here> \n",
       "  \n",
@@ -169,7 +170,7 @@
   },
   "STEP_6_1":{
     "replyMessage":[
-      "*_If you wanna know how to resign from the company or how to correctly do a dismissal process, just click on the next link:_*\n",
+      "*_If you wanna know how to resign from the company or how to correctly do a dismissal process, :airplane_departure: just click on the next link:_*\n",
       "  \n",
       "<https://www.notion.so/ontopai/Offboarding-7606ff6167d04559bdf09eb20e3978cf|Click Here> \n",
       "  \n",
@@ -179,7 +180,7 @@
   },
   "STEP_6_2":{
     "replyMessage":[
-      "*_I'm sure you wanna enjoy some free time :sunglasses: look how you can easily request it here:_* \n",
+      "*_I'm sure you wanna enjoy some free time :beach_with_umbrella: look how you can easily request it here:_* \n",
       "  \n",
       "<https://www.notion.so/ontopai/Absences-Days-Off-How-to-get-them-ad787c42412f4b9982d03944cbaa8ed4|Clich Here> \n",
       "  \n",
@@ -189,7 +190,7 @@
   },
   "STEP_6_3":{
     "replyMessage":[
-      "*_You know we all work based on Colombian holidays as an extra benefit for everyone no matter where you are located, if you want to know when these days are just click on the next link so your calendar can show you the dates._* \n",
+      "*_You know we all work based on Colombian holidays as an extra benefit for everyone no matter where you are located, if you want to know when these days are just click on the next link so your calendar can show you the dates. :beach_with_umbrella:_* \n",
       "  \n",
       " <https://calendar.google.com/calendar/u/0/r?cid=Y19xMXA2cXJkdDBxbmxta29wNm5kYTRvNW10Z0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t|Click Here> \n",
       "  \n",
@@ -199,7 +200,7 @@
   },
   "STEP_6_4":{
     "replyMessage":[
-      "*_Do you need to know when the birthdays of the people in your team are? just click on the next link and get the info so you can start planning the celebrations_*\n",
+      "*_Do you need to know when the birthdays of the people in your team are? just click on the next link and get the info so you can start planning the celebrations. :partying_face:_*\n",
       "  \n",
       "<https://docs.google.com/spreadsheets/d/18h3adugnUPMRje1XJ0x5smvSltemLDDANmBmmZ9CZFM/edit#gid=0|Click Here> \n",
       "  \n",
