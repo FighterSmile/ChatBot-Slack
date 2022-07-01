@@ -31,7 +31,7 @@
       "2. Certifications\n",
       "3. Compensation\n",
       "4. Ethic line\n",
-      "5. Talent Adquisition \n",
+      "5. Talent Acquisition \n",
       "6. FQA \n",
       "7. Feedback Peach."
     ]
@@ -43,7 +43,7 @@
   },
   "BYE":{
     "replyMessage":[
-      "*_Goodbye - au revoir - arrivederci - auf wiedersehen - adeus - daag - chao _*\n",
+      "*_Goodbye - au revoir - arrivederci - auf wiedersehen - tchau - daag - chao _*\n",
       "*_Have a nice one! :kissing_closed_eyes: _* \n"
     ],
     "media":null,
@@ -75,7 +75,8 @@
   },
   "STEP_3":{
     "replyMessage":[
-      " *_As a leader do you want to know how to request a fee Increase :moneybag: to one of your teammates? take a look at how to do it correctly here:_* \n",
+      "*_This is the compensation menu, here you can find a guide on how to request it!_* \n",
+      "*_Use this info carefully :wink:_* \n",
       "  \n",
       "1. Guideline\n",
       "2. Form to request it\n",
@@ -96,10 +97,10 @@
   },
   "STEP_5":{
     "replyMessage":[
-      " *_If you want to request a new rockstar :guitar: whether is a new role or a replacement, check here what you need to request them:_* \n",
+      " *_This is the Talent Acquisition Menu  :guitar:, here you will find the job descriptions for the different roles we have, and if you are a leader you will be able to find how to request the new talent you need to keep rocking!_* \n",
       "  \n",
-      "1. Jobs descriptions\n",
-      "2. Form Talent Adquisition\n",
+      "1. Job descriptions\n",
+      "2. Talent Acquisition Form\n",
       "  \n",
       "To go back to Menu just type 'Menu'\n",
       "If there's nothing else I can help you with, just type 'Bye'."
@@ -107,12 +108,14 @@
   },
   "STEP_6":{
     "replyMessage":[
-      "*_From my experience as a member of HR :face_with_hand_over_mouth:, these are our most frequent requests. take a look at them a choose the one you need._*\n",
+      "*_From my experience as a member of HR :face_with_hand_over_mouth:, these are our most frequent requests. Take a look at them a choose the one you need._*\n",
       "  \n",
       "1. Offboarding process step-by-step \n",
       "2. How to request a Day-Off ? \n",
-      "3. Global Day Offs\n",
-      "4. Birthdays Ontopers\n",
+      "3. Global days Off\n",
+      "4. Ontopers birthdays\n",
+      "5. Perks for being part of Ontop\n",
+      "6. Org Chart \n",
       " \n",
       "To go back to Menu just type 'Menu'\n",
       "If there's nothing else I can help you with, just type 'Bye'."
@@ -120,7 +123,7 @@
   },
   "STEP_7":{
     "replyMessage":[
-      " *_I'm gorgeous I know :kissing_heart:! But I also know feedback is part of our DNA since day one, so please is there something you would like me to add or change let me know by just filling out the next form: _* \n",
+      " *_I'm gorgeous I know :kissing_heart:! But I also know feedback is part of our DNA since day one, so is there something you would like to add or change let me know by just filling out the next form:  _* \n",
       "  \n",
       "<https://forms.gle/reWEWAizRcQYd1ug9|Click Here> \n",
       "  \n",
@@ -140,7 +143,7 @@
   },
   "STEP_3_2":{
     "replyMessage":[
-      "*_As a leader you may wanna give one of your teammates a fee increase, promotion, or move them to a new area, to know where to request it :money_mouth_face:, just click on the next link:_*\n",
+      "*_As a leader you may wanna give one of your teammates a fee increase, career advancement, or move them to a new area, to know where to request it :money_mouth_face:, just click on the next link:_*\n",
       "  \n",
       "<https://forms.gle/8oeJQ1ZtpjShPhNc6|Click Here> \n",
       "  \n",
@@ -160,7 +163,7 @@
   },
   "STEP_5_2":{
     "replyMessage":[
-      "*_If you want to request a new rockstar whether is a new role or a replacement :wink: just click on the next link:_*\n",
+      "*_If you want to request a new rockstar :guitar: whether is a new role or a replacement :wink: just click on the next link:_*\n",
       "  \n",
       "<https://docs.google.com/forms/d/e/1FAIpQLSfKjTE1pAlVnGHx1C__GjpxzaOsk2uYZ_Qc5XmSUvJhKBsIxw/viewform|Click Here> \n",
       "  \n",
@@ -190,7 +193,7 @@
   },
   "STEP_6_3":{
     "replyMessage":[
-      "*_You know we all work based on Colombian holidays as an extra benefit for everyone no matter where you are located, if you want to know when these days are just click on the next link so your calendar can show you the dates. :beach_with_umbrella:_* \n",
+      "*_Holidays as an extra benefit for everyone no matter where you are located, if you want to know when these days are just click on the next link so your calendar can show you the dates. :beach_with_umbrella:_* \n",
       "  \n",
       " <https://calendar.google.com/calendar/u/0/r?cid=Y19xMXA2cXJkdDBxbmxta29wNm5kYTRvNW10Z0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t|Click Here> \n",
       "  \n",
@@ -200,7 +203,7 @@
   },
   "STEP_6_4":{
     "replyMessage":[
-      "*_Do you need to know when the birthdays of the people in your team are? just click on the next link and get the info so you can start planning the celebrations. :partying_face:_*\n",
+      "*_Do you need to know when are the birthdays of the people in your team? Just click on the next link and get the info so you can start planning the celebrations. :partying_face:_*\n",
       "  \n",
       "<https://docs.google.com/spreadsheets/d/18h3adugnUPMRje1XJ0x5smvSltemLDDANmBmmZ9CZFM/edit#gid=0|Click Here> \n",
       "  \n",
@@ -208,16 +211,24 @@
       "If there's nothing else I can help you with for the moment just type 'Bye'."
     ]
   },
-  "Diversity_ideas":{
+  "STEP_6_5":{
     "replyMessage":[
-      "*_Being diverse is part of our DNA, and that is something we want to celebrate, give us ideas or feedback so we can be the best place to work, where everyone can feel welcome!_*\n",
+      "*_You know that for being and Ontoper we have a lot of perks :exploding_head:, that you can easily check and find here, just click on the link:_*\n",
       "  \n",
-      "<https://docs.google.com/forms/d/1A3chzHyiSajjSvNXEh-dwkI-c2zrSW1cgKW6Jl0ro8k/edit|Click Here> \n",
+      "<https://www.notion.so/ontopai/Benefits-7935bd6e2e4243bea239cd7a9e8467fc|Click Here> \n",
       "  \n",
       "To go back to the previous options just type *'9'*  if you want to go back to menu just type 'Menu'\n",
       "If there's nothing else I can help you with for the moment just type 'Bye'."
-    ],
-    "media":null,
-    "trigger":null
+    ]
+  },
+  "STEP_6_6":{
+    "replyMessage":[
+      "*_You want to take a look at our Org Chart :busts_in_silhouette:? Easy Peasy Lemon Squeezy, just click on the next link: _*\n",
+      "  \n",
+      "<https://www.notion.so/ontopai/Organization-Chart-6a42486a13e04282ac2c3d515e758d10|Click Here> \n",
+      "  \n",
+      "To go back to the previous options just type *'9'*  if you want to go back to menu just type 'Menu'\n",
+      "If there's nothing else I can help you with for the moment just type 'Bye'."
+    ]
   }
 }
