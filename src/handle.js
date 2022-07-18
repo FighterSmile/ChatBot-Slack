@@ -1,3 +1,20 @@
+import { WebClient } from '@slack/web-api';
+
+const dotenv = require('dotenv');
+dotenv.config();
+
+const SLACK_OAUTH_TOKEN = process.env.SLACK_OAUTH_TOKEN;
+const web = new WebClient(SLACK_OAUTH_TOKEN)
+
+
+async function sendMessage(channel, message){
+  await web.chat.postMessage({
+    channel: channel,
+    text: message
+  });
+}
+
+
 
 function formatting(text){
   if(text.constructor != String) return null
@@ -12,5 +29,12 @@ function formatting(text){
 }
 
 
+// function sanitizeString(str){
+//   str = str.replace(/[^a-z0-9áéíóúñü \.,_-]/gim,"");
+//   console.log(str.trim())
+  
+//   // return str.trim();
+// }
 
-module.exports = {formatting};
+
+module.exports = {formatting,sendMessage};

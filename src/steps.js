@@ -9,19 +9,19 @@ const get =  async (message) => {
 
 const getMenu = async (msg) =>{
   const nextStep = require(`../flow/MENU.json`);
-  const response = await getStep(nextStep, msg)
+  const response = await getNextStep(nextStep, msg)
   return response
 }
 
 const getStep_x = async (lastStep, msg) =>{
   const nextStep = require(`../flow/step_x/${lastStep}.json`);
-  const response = await getStep(nextStep, msg)
+  const response = await getNextStep(nextStep, msg)
   return response
 }
 
 const getStep_x_x = async (lastStep, msg) => {
   const nextStep = require(`../flow/step_x_x/${lastStep}.json`);
-  const response = await getStep(nextStep, msg)
+  const response = await getNextStep(nextStep, msg)
   return response
 }
 
@@ -52,5 +52,10 @@ const getStep =(nextStep, msg) => new Promise((resolve, reject) => {
   resolve(null)
 })
 
+const getNextStep = (nextStep, msg) => new Promise((resolve,reject) => {
+  const {key} = nextStep.find(k => k.keywords.includes(msg)) || {key:null}
+  const response = key || null
+  resolve(response)
+})
 
 module.exports = {get, reply, getMenu, getStep_x, getStep_x_x}
