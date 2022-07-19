@@ -6,17 +6,22 @@ dotenv.config();
 const SLACK_OAUTH_TOKEN = process.env.SLACK_OAUTH_TOKEN;
 const web = new WebClient(SLACK_OAUTH_TOKEN)
 
-
-async function sendMessage(channel, message){
+const sendMessage = async (channel, message) => {
   await web.chat.postMessage({
     channel: channel,
     text: message
   });
 }
 
+// function sanitizeString(str){
+//   str = str.replace(/[^a-z0-9áéíóúñü \.,_-]/gim,"");
+//   console.log(str.trim())
+  
+//   // return str.trim();
+// }
 
 
-function formatting(text){
+const formatting = (text) =>{
   if(text.constructor != String) return null
   let aMinus = text.replace(/[áàäâ]/g,'a');
   let eMinus = aMinus.replace(/[éèëê]/g,'e');
@@ -29,12 +34,4 @@ function formatting(text){
 }
 
 
-// function sanitizeString(str){
-//   str = str.replace(/[^a-z0-9áéíóúñü \.,_-]/gim,"");
-//   console.log(str.trim())
-  
-//   // return str.trim();
-// }
-
-
-module.exports = {formatting,sendMessage};
+module.exports = {sendMessage, formatting}

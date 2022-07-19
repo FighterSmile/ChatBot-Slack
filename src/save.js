@@ -16,7 +16,7 @@ const saveMessage = (step, message, userid) =>{
   fs.writeFileSync(`chats/${userid}.json`, json_messages, 'utf-8') 
 }
 
-// Cambiar todos los path a Constante
+
 
 const readLastStep = (userid) => new Promise((resolve,reject) =>{
   const pathMessages = `${pathChats}/${userid}.json`

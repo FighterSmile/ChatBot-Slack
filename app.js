@@ -3,9 +3,9 @@ dotenv.config();
 const packageJson = require('./package.json')
 
 import { RTMClient } from '@slack/rtm-api';
-const {getStep, responseMessages,getStepAfter} = require('./src/flow')
-const {saveMessage, readLastStep} = require('./src/save')
-const {formatting,sendMessage} = require('./src/handle')
+const {getStep, responseMessages,getStepAfter} = require('./src/flow');
+const {saveMessage, readLastStep} = require('./src/save');
+const {sendMessage, formatting} = require('./src/handle');
 
 //environment variables
 const SLACK_OAUTH_TOKEN = process.env.SLACK_OAUTH_TOKEN;
@@ -44,7 +44,7 @@ const listenMessage = () => rtm.on('message', async (msg) =>{
     const regExp = /STEP_[1-9]$/;
     const regExp_2 = /STEP_[1-9]_[1-9]$/;
 
-    // Messages MENU and STEP_X and STEP_X_X
+    // Messages for MENU and STEP_X and STEP_X_X
     if(lastStep == 'MENU' || regExp.test(lastStep) || regExp_2.test(lastStep)){
       step = await getStepAfter(lastStep, message)
       const response = await responseMessages(step)
