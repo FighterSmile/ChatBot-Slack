@@ -48,22 +48,3 @@ const getNextStep = (nextStep, msg) => new Promise((resolve,reject) => {
 })
 
 module.exports = {get, reply, getKeyStep}
-
-
-// const getMenu = async (msg) =>{
-//   const nextStep = require(`../flow/MENU.json`);
-//   const response = await getNextStep(nextStep, msg)
-//   return response
-// }
-
-// const getStep_x = async (lastStep, msg) =>{
-//   const nextStep = require(`../flow/step_x/${lastStep}.json`);
-//   const response = await getNextStep(nextStep, msg)
-//   return response
-// }
-
-// const getStep_x_x = async (lastStep, msg) => {
-//   const nextStep = require(`../flow/step_x_x/${lastStep}.json`);
-//   const response = await getNextStep(nextStep, msg)
-//   return response
-// }

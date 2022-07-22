@@ -1,9 +1,9 @@
 const fs = require('fs');
-const date = new Date().toISOString();
 const pathChats = `${__dirname}/../chats`
 
 
 const saveMessage = (step, message, userid) =>{
+  const date = new Date().toISOString();
   let messages = [];
   let newMessage = {
     step,
