@@ -1,7 +1,9 @@
 const fs = require('fs');
-const date = new Date().toISOString();
+const pathChats = `${__dirname}/../chats`
+
 
 const saveMessage = (step, message, userid) =>{
+  const date = new Date().toISOString();
   let messages = [];
   let newMessage = {
     step,
@@ -14,8 +16,10 @@ const saveMessage = (step, message, userid) =>{
   fs.writeFileSync(`chats/${userid}.json`, json_messages, 'utf-8') 
 }
 
+
+
 const readLastStep = (userid) => new Promise((resolve,reject) =>{
-  const pathMessages = `${__dirname}/../chats/${userid}.json`
+  const pathMessages = `${pathChats}/${userid}.json`
   if(fs.existsSync(pathMessages)){
     const json_messages = fs.readFileSync(pathMessages);
     let messages = JSON.parse(json_messages);

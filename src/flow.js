@@ -1,4 +1,9 @@
-const {get,reply,getMenu,getStep_x,getStep_x_x} = require('./steps')
+const {get,reply, getKeyStep} = require('./steps');
+
+const pathMenu = `${__dirname}/../flow/MENU.json`;
+const pathStep_X = `${__dirname}/../flow/step_x`;
+const pathStep_X_X = `${__dirname}/../flow/step_x_x`;
+
 
 const getStep = async(message) =>{
   const msg = await get(message)
@@ -15,15 +20,18 @@ const getStepAfter = async (lastStep, message) => {
   const regExp_1 = /STEP_[1-9]$/g;
   const regExp_2 = /STEP_[1-9]_[1-9]$/g;
   if (lastStep == 'MENU'){
-    const data = await getMenu(message)
-    return data
+    const result = await getKeyStep(pathMenu, message)
+    return result
   } else if(regExp_1.test(lastStep)){
-    const data = await getStep_x(lastStep, message)
-    return data
+    let path = `${pathStep_X}/${lastStep}.json`
+    const result = await getKeyStep(path, message)
+    return result
   } else if(regExp_2.test(lastStep)){
-    const data = await getStep_x_x(lastStep,message)
-    return data
+    let path = `${pathStep_X_X}/${lastStep}.json`
+    const result = await getKeyStep(path, message)
+    return result
   }
 }
+
 
 module.exports = {getStep, responseMessages,getStepAfter}
